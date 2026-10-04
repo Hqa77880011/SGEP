@@ -1,6 +1,7 @@
 """Paper comparisons and validation-only hyperparameter selection."""
 
 import itertools
+import json
 from pathlib import Path
 
 import numpy as np
@@ -89,10 +90,10 @@ def run_suite(config, manifest, root, output, suite="main", seeds=None, dataset=
         run = output / item["variant"] / f"seed_{item['seed']}"
         checkpoint = train(item["config"], manifest, root, run, dataset)
         metrics = finish_run(checkpoint, manifest, root, run, dataset, config["device"])
-        saved = __import__("json").loads((run / "metrics.json").read_text("utf-8"))
+        saved = json.loads((run / "metrics.json").read_text("utf-8"))
         saved["variant"] = item["variant"]
         save_json(run / "metrics.json", saved)
-        rows.append({"dataset": dataset or "", "variant": item["variant"], "method": item["config"]["method"],
+        rows.append({"dataset": saved["dataset"], "variant": item["variant"], "method": item["config"]["method"],
                      "seed": item["seed"], "run_dir": str(run), **metrics})
         pd.DataFrame(rows).to_csv(output / "results.csv", index=False)
     return rows

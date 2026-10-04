@@ -17,6 +17,7 @@ def test_experiment_runner_preserves_calibration_and_variant_metadata(tmp_path):
         "feature_dim": 8, "image_size": 32, "epochs": 1, "batch_size": 8,
         "threads": 1, "device": "cpu", "lambda_proto": 0.2})
     rows = run_suite(config, manifest, root, tmp_path / "factorial", "factorial", [11, 22])
+    assert all(row["dataset"] == "Fixture" for row in rows)
     for row in rows:
         run = tmp_path / "factorial" / row["variant"] / f"seed_{row['seed']}"
         actual_config = json.loads((run / "config.json").read_text())
