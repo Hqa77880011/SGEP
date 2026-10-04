@@ -1,0 +1,35 @@
+dataset,category,role
+HAM10000,nv,known
+HAM10000,bkl,known
+HAM10000,bcc,known
+HAM10000,vasc,known
+HAM10000,df,proxy
+HAM10000,mel,unknown
+HAM10000,akiec,unknown
+GastroVision,Normal mucosa and vascular pattern in the large bowel,known
+GastroVision,Accessory tools,known
+GastroVision,Normal stomach,known
+GastroVision,Small bowel_terminal ileum,known
+GastroVision,Colon polyps,known
+GastroVision,Pylorus,known
+GastroVision,Gastroesophageal_junction_normal z-line,known
+GastroVision,Dyed-resection-margins,known
+GastroVision,Duodenal bulb,known
+GastroVision,Ileocecal valve,known
+GastroVision,Blood in lumen,proxy
+GastroVision,Dyed-lifted-polyps,known
+GastroVision,Normal esophagus,known
+GastroVision,Colorectal cancer,unknown
+GastroVision,Cecum,known
+GastroVision,Esophagitis,known
+GastroVision,Barrett's esophagus,unknown
+GastroVision,Resected polyps,known
+GastroVision,Retroflex rectum,known
+GastroVision,Gastric polyps,unknown
+GastroVision,Mucosal inflammation large bowel,unknown
+GastroVision,Colon diverticula,known
+GastroVision,Resection margins,known
+GastroVision,Angiectasia,proxy
+GastroVision,Erythema,proxy
+GastroVision,Esophageal varices,proxy
+GastroVision,Ulcer,unknown

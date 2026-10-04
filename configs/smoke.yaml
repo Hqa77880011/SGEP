@@ -1,0 +1,11 @@
+# Small CPU integration check; this configuration is not an experiment.
+method: sgep
+backbone: tiny
+pretrained: false
+feature_dim: 16
+image_size: 32
+epochs: 1
+batch_size: 4
+workers: 0
+threads: 1
+device: cpu

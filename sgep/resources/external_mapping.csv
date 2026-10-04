@@ -1,0 +1,27 @@
+dataset,category,mapped_class,role,exclusion_reason
+PH2,common nevi,nv,known,
+PH2,atypical nevi,nv,known,
+PH2,melanoma,mel,unknown,
+HyperKvasir,barretts,Barrett's esophagus,unknown,
+HyperKvasir,short-segment-barretts,Barrett's esophagus,unknown,
+HyperKvasir,bbps-0-1,,excluded,quality label outside the source disease taxonomy
+HyperKvasir,bbps-2-3,,excluded,quality label outside the source disease taxonomy
+HyperKvasir,impacted-stool,,excluded,content label outside the source disease taxonomy
+HyperKvasir,dyed-lifted-polyps,Dyed-lifted-polyps,known,
+HyperKvasir,dyed-resection-margins,Dyed-resection-margins,known,
+HyperKvasir,hemorrhoids,hemorrhoids,unknown,
+HyperKvasir,ileum,Small bowel_terminal ileum,known,
+HyperKvasir,normal-cecum,Cecum,known,
+HyperKvasir,normal-pylorus,Pylorus,known,
+HyperKvasir,normal-z-line,Gastroesophageal_junction_normal z-line,known,
+HyperKvasir,oesophagitis-a,Esophagitis,known,
+HyperKvasir,oesophagitis-b-d,Esophagitis,known,
+HyperKvasir,polyp,Colon polyps,known,
+HyperKvasir,retroflex-rectum,Retroflex rectum,known,
+HyperKvasir,retroflex-stomach,Normal stomach,known,
+HyperKvasir,ulcerative-colitis-0-1,Mucosal inflammation large bowel,unknown,
+HyperKvasir,ulcerative-colitis-1-2,Mucosal inflammation large bowel,unknown,
+HyperKvasir,ulcerative-colitis-2-3,Mucosal inflammation large bowel,unknown,
+HyperKvasir,ulcerative-colitis-grade-1,Mucosal inflammation large bowel,unknown,
+HyperKvasir,ulcerative-colitis-grade-2,Mucosal inflammation large bowel,unknown,
+HyperKvasir,ulcerative-colitis-grade-3,Mucosal inflammation large bowel,unknown,

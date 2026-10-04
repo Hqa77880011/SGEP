@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the SGEP manuscript when using this implementation."
+title: "SGEP: Spatially Grounded Evidential Prototypes for Open-Set Medical Image Recognition"
+type: software
+authors:
+  - family-names: Hu
+    given-names: Qinao
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/Hqa77880011/SGEP"
